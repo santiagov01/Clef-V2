@@ -1,0 +1,19 @@
+# Virtual Environment
+env-emb/
+env-class/
+.env/
+*.pyc
+__pycache__/
+
+# train
+audio_files/
+embeddings/
+TVT/
+
+# csv _embeddings
+embeddings_csv/
+*.log
+*.csv
+
+# Outpus
+outputs/

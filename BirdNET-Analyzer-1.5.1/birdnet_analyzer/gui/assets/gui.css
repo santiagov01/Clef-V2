@@ -1,0 +1,41 @@
+.d-block .wrap {
+    display: block !important;
+}
+
+.matrix-mh-200,
+.matrix-mh-200 table {
+    max-height: 300px;
+    overflow-y: auto !important;
+}
+
+.matrix-mh-200 .table-wrap {
+    max-height: 300px;
+}
+
+.mh-200 {
+    max-height: 300px;
+    overflow-y: auto !important;
+}
+
+footer {
+    display: none !important;
+}
+
+#single_file_audio,
+#single_file_audio * {
+    max-height: 81.6px;
+    min-height: 0;
+}
+
+#update-available a {
+    text-decoration: none;
+}
+
+:root {
+    --block-title-text-color: var(--neutral-800);
+    --block-info-text-color: var(--neutral-500);
+}
+
+#single-file-output td:first-of-type span {
+    text-align: center;
+}
