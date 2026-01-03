@@ -4,6 +4,7 @@ env-class/
 .env/
 *.pyc
 __pycache__/
+.DS_Store
 
 # train
 audio_files/
