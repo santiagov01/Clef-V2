@@ -8,14 +8,14 @@ class ImageGridApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Revisor de Espectrogramas")
-        self.rows = 6
-        self.columns = 12
+        self.rows = 4
+        self.columns = 8
         self.page = 0
         self.selected_label = None
         self.selected_cells = {}
         self.image_refs = []
 
-        self.audio_path = "raw_segments"
+        self.audio_path = "audio_files/raw_segm_audios"
         pygame.init()
         self.current_audio = None  # Para rastrear el audio actual
 
@@ -191,7 +191,7 @@ class ImageGridApp:
             return
         # Obtener la ruta del archivo de audio
         image_path = self.df.iloc[idx, 0]
-        image_path = image_path.replace("raw_specs", self.audio_path)
+        image_path = image_path.replace("labeling_files/raw_specs", self.audio_path)
         if "_voice" in image_path:
             audio_path = image_path.replace("_voice.png", ".ogg")
         else:
@@ -218,4 +218,4 @@ class ImageGridApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = ImageGridApp(root)
-    root.mainloop()
+    root.mainloop() 

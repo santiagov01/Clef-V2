@@ -1,6 +1,7 @@
 # Virtual Environment
 env-emb/
 env-class/
+env-label/
 .env/
 *.pyc
 __pycache__/
@@ -15,6 +16,9 @@ TVT/
 embeddings_csv/
 *.log
 *.csv
+
+# labeling
+labeling_files/
 
 # Outpus
 outputs/
