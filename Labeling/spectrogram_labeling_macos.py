@@ -50,7 +50,7 @@ class ImageGridApp:
         self.menu_frame = tk.Frame(root)
         self.menu_frame.pack(pady=2)
 
-        self.categories = ['no coincide', 'silencio', 'ruido', 'experto', 'voz']
+        self.categories = ['no_coincide', 'silencio', 'ruido', 'experto', 'voz']
         for cat in self.categories:
             tk.Button(
                 self.menu_frame,

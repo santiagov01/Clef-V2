@@ -8,10 +8,13 @@ Expected folder layout:
     <split>/
         <species>/
             <recording_id>/
+                experto/
+                no_coincide/
+                ruido/
+                silencio/
                 vocalizacion/   <- Only this folder is used
                 voz/
-                silence/
-                trash/
+                
 
 Files inside 'vocalizacion' can be:
   - Images (.png, .jpg, .jpeg)  -> loaded directly
