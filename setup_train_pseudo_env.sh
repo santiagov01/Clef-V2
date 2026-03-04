@@ -11,6 +11,7 @@ ${PYTHON} -m venv "${ENV_NAME}"
 # shellcheck disable=SC1090
 source "${ENV_NAME}/bin/activate"
 
+# Esta puede depender de permisos de administrador
 pip install --upgrade pip setuptools wheel
 
 # PyTorch — change the URL for a different CUDA version:

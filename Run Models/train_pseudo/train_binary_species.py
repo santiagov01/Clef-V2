@@ -222,7 +222,7 @@ def build_file_lists(data_dir: str, target_species: str, all_species: list[str],
     # ITERATE OVER ALL THE OTHER SPECIES TO COLLECT NEGATIVE SAMPLES
     for sp in all_species:
         if sp != target_species:
-    # TODO: Consider using the 'voz', 'silence', 'trash' folders from this and other species as additional negatives to increase negative samples, instead of only using 'vocalizacion' from other species. This could help balance the dataset if there are few positives.
+    # TODO: tomar 1 sgmento de cada especie, aleatorio.
             negatives.extend(collect_vocalizacion_files(split_dir, sp))
 
     # sub-sample negatives so that negative : positive <= neg_ratio
