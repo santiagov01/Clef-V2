@@ -1,10 +1,9 @@
 import os
-import shutil
 import random
 
 # ---------------- Configuration ----------------
-SOURCE_DIR = R"D:\birdclef\birdclef-2025\train_audio"  # folder with species directories
-OUTPUT_DIR = R"D:\birdclef\dataset"        # folder where train/test/val will be created
+SOURCE_DIR = R"audio_files/raw_audios"  # folder with species directories
+OUTPUT_DIR = R"audio_files/dataset"     # folder where train/test/val will be created
 
 SPLIT_RATIOS = {
     "train": 0.7,
@@ -13,7 +12,7 @@ SPLIT_RATIOS = {
 }
 
 # Subfolders to create under each recording
-LABEL_FOLDERS = ["voz", "silence", "vocalizacion", "trash"]
+LABEL_FOLDERS = ["voz", "ruido", "vocalizacion", "no_coincide", "silencio", "experto"]
 
 # ------------------------------------------------
 
@@ -55,3 +54,7 @@ def create_structure():
 
 if __name__ == "__main__":
     create_structure()
+
+## Running
+## located in Clef-V2 folder
+## run: python3 Files_and_Folders_Management/generate_empty_folders.py
