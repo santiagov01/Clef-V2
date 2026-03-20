@@ -1,3 +1,0 @@
-[submodule "Pseudolabeling/bacpipe"]
-	path = Pseudolabeling/bacpipe
-	url = https://github.com/bioacoustic-ai/bacpipe.git
