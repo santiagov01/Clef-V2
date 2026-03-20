@@ -2,6 +2,7 @@
 env-emb/
 env-class/
 env-label/
+env-pseudo/
 .env/
 *.pyc
 __pycache__/
