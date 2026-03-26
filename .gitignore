@@ -8,6 +8,9 @@ env-pseudo/
 __pycache__/
 .DS_Store
 
+#bacpipe
+Pseudolabeling/bacpipe/bacpipe/model_checkpoints
+
 # train
 audio_files/
 embeddings/
